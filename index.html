@@ -3,13 +3,516 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Duhoot</title>
+  <title>DuHoot</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+  <header class="main-header">
+    <nav class="main-navigation">
+      <a class="main-header-logo">
+        <img src="img/logo.png" alt="DuHoot-logo" width="" height="">
+        Duhoot
+      </a>
+      <ul class="site-navigation">
+        <li><a href="">Reality</a></li>
+        <li><a href="">Living</a></li>
+        <li><a href="">Education</a></li>
+        <li><a href="">Entertainment</a></li>
+        <li><a href="">Mobility</a></li>
+      </ul>
+      <input class="navigation-search" type="search">
+      <ul class="user-navigation">
+        <li><a href="">Login</a></li>
+      </ul>
+    </nav>
+  </header>
 
+  <main class="container">
+    <form class="main-search" action="https://echo.htmlacademy.ru" method="post">
+      <p class="main-search-caption">What are you looking for?</p>
+      <select class="" name="city-search" id="">
+        <option value="Dubai">Dubai</option>
+        <option value="Moscow">Moscow</option>
+        <option value="London">London</option>
+        <option value="New-York">New-York</option>
+        <option value="Gonkong">Gonkong</option>
+      </select>
+      <select class="" name="servise-search" id="">
+        <option value="Reality">Reality</option>
+        <option value="Living">Living</option>
+        <option value="Education">Education</option>
+        <option value="Entertainment">Entertainment</option>
+        <option value="Mobility">Mobility</option>
+      </select>
+      <input class="" type="text" placeholder="Keyword, name, date, ...">
+      <button class="btn" type="submit">Search</button>
+    </form>
+
+    <form class="filters" action="https://echo.htmlacademy.ru" method="get">
+      <div>
+        <span class="active">Recommended</span>
+        <span class="">Lastest</span>
+        <span class="">Highlights</span>
+      </div>
+      <div>
+        <select class="" name="city-sort" id="">
+          <option value="Dubai">Dubai</option>
+          <option value="Moscow">Moscow</option>
+          <option value="London">London</option>
+          <option value="New-York">New-York</option>
+          <option value="Gonkong">Gonkong</option>
+        </select>
+        <a class="" href="">Show map</a>
+      </div>
+      <div>
+        <span>Filter:</span>
+        <label><input type="checkbox" name="reality"> Reality</label>
+        <label><input type="checkbox" name="living"> Living</label>
+        <label><input type="checkbox" name="education"> Education</label>
+        <label><input type="checkbox" name="entertainment"> Entertainment</label>
+        <label><input type="checkbox" name="mobility"> Mobility</label>
+      </div>
+    </form>
+
+    <section class="results">
+      <h1 class="visually-hidden">Результаты поиска</h1>
+
+      <section class="card">
+        <img src="" width="" height="" alt="Vision agency image">
+        <p>2 bedroom house for rent in Dubai</p>
+        <b>Vision agency</b>
+        <div class="raiting">
+          <span class="star  star--filled"></span>
+          <span class="star  star--filled"></span>
+          <span class="star  star--filled"></span>
+          <span class="star  star--filled"></span>
+          <span class="star"></span>
+          <span class="amount">(365)</span>
+        </div>
+        <div class="card-show">
+          <a href="" class="card-link">Show more</a>
+          <div class="rate">
+            <span class="rate-star"></span>
+            <span class="rate-star"></span>
+            <span class="rate-star"></span>
+            <span class="rate-star"></span>
+            <span class="rate-star"></span>
+          </div>
+          <a href="" class="discuss">Discuss</a>
+        </div>
+      </section>
+
+      <section class="card">
+        <img src="" width="" height="" alt="Long beach image">
+        <p>Beach party festival 2019</p>
+        <b>Long beach</b>
+        <div class="all-raiting">
+          <span class="star"></span>
+          <span class="star"></span>
+          <span class="star"></span>
+          <span class="star"></span>
+          <span class="star"></span>
+          <span class="amount">(1165)</span>
+        </div>
+        <div class="card-show">
+          <a href="" class="card-link">Show more</a>
+          <div class="rate">
+            <span class="rate-star"></span>
+            <span class="rate-star"></span>
+            <span class="rate-star"></span>
+            <span class="rate-star"></span>
+            <span class="rate-star"></span>
+          </div>
+          <a href="" class="discuss">Discuss</a>
+        </div>
+      </section>
+
+      <section class="card">
+        <img src="" width="" height="" alt="Bus trans image">
+        <p>Aliquam quis pulvinar purus</p>
+        <b>Bus trans</b>
+        <div class="all-raiting">
+          <span class="star"></span>
+          <span class="star"></span>
+          <span class="star"></span>
+          <span class="star"></span>
+          <span class="star"></span>
+          <span class="amount">(342)</span>
+        </div>
+        <div class="card-show">
+          <a href="" class="card-link">Show more</a>
+          <div class="rate">
+            <span class="rate-star"></span>
+            <span class="rate-star"></span>
+            <span class="rate-star"></span>
+            <span class="rate-star"></span>
+            <span class="rate-star"></span>
+          </div>
+          <a href="" class="discuss">Discuss</a>
+        </div>
+      </section>
+
+      <section class="card">
+        <img src="" width="" height="" alt="Reality agency image">
+        <p>4 bedroom house for rent in Dubai</p>
+        <b>Reality agency</b>
+        <div class="all-raiting">
+          <span class="star"></span>
+          <span class="star"></span>
+          <span class="star"></span>
+          <span class="star"></span>
+          <span class="star"></span>
+          <span class="amount">(165)</span>
+        </div>
+        <div class="card-show">
+          <a href="" class="card-link">Show more</a>
+          <div class="rate">
+            <span class="rate-star"></span>
+            <span class="rate-star"></span>
+            <span class="rate-star"></span>
+            <span class="rate-star"></span>
+            <span class="rate-star"></span>
+          </div>
+          <a href="" class="discuss">Discuss</a>
+        </div>
+      </section>
+
+      <section class="review">
+        <img class="review-image" src="" width="" height="" alt="Vision agency image">
+        <b class="review-subject">Vision agency</b>
+        <div class="all-raiting">
+          <span class="star star--filled"></span>
+          <span class="star star--filled"></span>
+          <span class="star star--filled"></span>
+          <span class="star star--filled"></span>
+          <span class="star"></span>
+          <span class="amount">(342)</span>
+        </div>
+        <div class="review-raiting">
+          <span class="star star--filled"></span>
+          <span class="star star--filled"></span>
+          <span class="star star--filled"></span>
+          <span class="star"></span>
+          <span class="star"></span>
+        </div>
+        <b class="review-author">Lucy-P</b>
+        <p class="review-text">“Aliquam quis pulvinar purus. Etiam cursus ipsum quis enim faucibus, quis posuere orci ornare. Duis mattis sagittis fringilla.”</p>
+        <a class="review-to-full" href=""> ...read more</a>
+      </section>
+
+      <section class="review">
+        <img class="review-image" src="" width="" height="" alt="Skybox club image">
+        <b class="review-subject">Skybox club</b>
+        <div class="all-raiting">
+          <span class="star star--filled"></span>
+          <span class="star star--filled"></span>
+          <span class="star star--filled"></span>
+          <span class="star star--filled"></span>
+          <span class="star star--filled"></span>
+          <span class="amount">(1365)</span>
+        </div>
+        <div class="review-raiting">
+          <span class="star star--filled"></span>
+          <span class="star star--filled"></span>
+          <span class="star star--filled"></span>
+          <span class="star star--filled"></span>
+          <span class="star star--filled"></span>
+        </div>
+        <b class="review-author">Peter145</b>
+        <p class="review-text">“Aliquam quis pulvinar purus. Etiam cursus ipsum quis enim faucibus, quis posuere orci ornare. Duis mattis sagittis fringilla.”</p>
+        <a class="review-to-full" href=""> ...read more</a>
+      </section>
+
+      <section class="card">
+        <img src="" width="" height="" alt="Vision agency image">
+        <p>2 bedroom house for rent in Dubai</p>
+        <b>Vision agency</b>
+        <div class="raiting">
+          <span class="star  star--filled"></span>
+          <span class="star  star--filled"></span>
+          <span class="star  star--filled"></span>
+          <span class="star  star--filled"></span>
+          <span class="star"></span>
+          <span class="amount">(365)</span>
+        </div>
+        <div class="card-show">
+          <a href="" class="card-link">Show more</a>
+          <div class="rate">
+            <span class="rate-star"></span>
+            <span class="rate-star"></span>
+            <span class="rate-star"></span>
+            <span class="rate-star"></span>
+            <span class="rate-star"></span>
+          </div>
+          <a href="" class="discuss">Discuss</a>
+        </div>
+      </section>
+
+      <section class="card">
+        <img src="" width="" height="" alt="Long beach image">
+        <p>Beach party festival 2019</p>
+        <b>Long beach</b>
+        <div class="all-raiting">
+          <span class="star"></span>
+          <span class="star"></span>
+          <span class="star"></span>
+          <span class="star"></span>
+          <span class="star"></span>
+          <span class="amount">(1165)</span>
+        </div>
+        <div class="card-show">
+          <a href="" class="card-link">Show more</a>
+          <div class="rate">
+            <span class="rate-star"></span>
+            <span class="rate-star"></span>
+            <span class="rate-star"></span>
+            <span class="rate-star"></span>
+            <span class="rate-star"></span>
+          </div>
+          <a href="" class="discuss">Discuss</a>
+        </div>
+      </section>
+
+      <section class="card">
+        <img src="" width="" height="" alt="Bus trans image">
+        <p>Aliquam quis pulvinar purus</p>
+        <b>Bus trans</b>
+        <div class="all-raiting">
+          <span class="star"></span>
+          <span class="star"></span>
+          <span class="star"></span>
+          <span class="star"></span>
+          <span class="star"></span>
+          <span class="amount">(342)</span>
+        </div>
+        <div class="card-show">
+          <a href="" class="card-link">Show more</a>
+          <div class="rate">
+            <span class="rate-star"></span>
+            <span class="rate-star"></span>
+            <span class="rate-star"></span>
+            <span class="rate-star"></span>
+            <span class="rate-star"></span>
+          </div>
+          <a href="" class="discuss">Discuss</a>
+        </div>
+      </section>
+
+      <section class="card">
+        <img src="" width="" height="" alt="Reality agency image">
+        <p>4 bedroom house for rent in Dubai</p>
+        <b>Reality agency</b>
+        <div class="all-raiting">
+          <span class="star"></span>
+          <span class="star"></span>
+          <span class="star"></span>
+          <span class="star"></span>
+          <span class="star"></span>
+          <span class="amount">(165)</span>
+        </div>
+        <div class="card-show">
+          <a href="" class="card-link">Show more</a>
+          <div class="rate">
+            <span class="rate-star"></span>
+            <span class="rate-star"></span>
+            <span class="rate-star"></span>
+            <span class="rate-star"></span>
+            <span class="rate-star"></span>
+          </div>
+          <a href="" class="discuss">Discuss</a>
+        </div>
+      </section>
+
+      <section class="review">
+        <img class="review-image" src="" width="" height="" alt="Skybox club image">
+        <b class="review-subject">Skybox club</b>
+        <div class="all-raiting">
+          <span class="star star--filled"></span>
+          <span class="star star--filled"></span>
+          <span class="star star--filled"></span>
+          <span class="star star--filled"></span>
+          <span class="star star--filled"></span>
+          <span class="amount">(1365)</span>
+        </div>
+        <div class="review-raiting">
+          <span class="star star--filled"></span>
+          <span class="star star--filled"></span>
+          <span class="star star--filled"></span>
+          <span class="star star--filled"></span>
+          <span class="star star--filled"></span>
+        </div>
+        <b class="review-author">Peter145</b>
+        <p class="review-text">“Aliquam quis pulvinar purus. Etiam cursus ipsum quis enim faucibus, quis posuere orci ornare. Duis mattis sagittis fringilla.”</p>
+        <a class="review-to-full" href=""> ...read more</a>
+      </section>
+
+      <section class="card">
+        <img src="" width="" height="" alt="Vision agency image">
+        <p>2 bedroom house for rent in Dubai</p>
+        <b>Vision agency</b>
+        <div class="raiting">
+          <span class="star  star--filled"></span>
+          <span class="star  star--filled"></span>
+          <span class="star  star--filled"></span>
+          <span class="star  star--filled"></span>
+          <span class="star"></span>
+          <span class="amount">(365)</span>
+        </div>
+        <div class="card-show">
+          <a href="" class="card-link">Show more</a>
+          <div class="rate">
+            <span class="rate-star"></span>
+            <span class="rate-star"></span>
+            <span class="rate-star"></span>
+            <span class="rate-star"></span>
+            <span class="rate-star"></span>
+          </div>
+          <a href="" class="discuss">Discuss</a>
+        </div>
+      </section>
+
+      <section class="card">
+        <img src="" width="" height="" alt="Long beach image">
+        <p>Beach party festival 2019</p>
+        <b>Long beach</b>
+        <div class="all-raiting">
+          <span class="star"></span>
+          <span class="star"></span>
+          <span class="star"></span>
+          <span class="star"></span>
+          <span class="star"></span>
+          <span class="amount">(1165)</span>
+        </div>
+        <div class="card-show">
+          <a href="" class="card-link">Show more</a>
+          <div class="rate">
+            <span class="rate-star"></span>
+            <span class="rate-star"></span>
+            <span class="rate-star"></span>
+            <span class="rate-star"></span>
+            <span class="rate-star"></span>
+          </div>
+          <a href="" class="discuss">Discuss</a>
+        </div>
+      </section>
+
+      <p class="results-more">
+        <a href="">Load more</a>
+      </p>
+    </section>
+
+    <section class="offer">
+      <h2 class="offer-title">What can DuHoot offer to you?</h2>
+      <p class="offer-subtitle">Etiam cursus ipsum quis enim faucibus</p>
+      <div class="offer-content">
+
+        <span class="offer-icon  offer-icon--reality"></span>
+        <section class="offer-section  offer-section--reality">
+          <h3>Reality</h3>
+          <ul>
+            <li>
+              <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit, massa at.</p>
+            </li>
+            <li>
+              <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit, massa at.</p>
+            </li>
+          </ul>
+        </section>
+
+        <span class="offer-icon  offer-icon--living"></span>
+        <section class="offer-section  offer-section--living">
+          <h3>Living</h3>
+          <ul>
+            <li>
+              <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit, massa at.</p>
+            </li>
+            <li>
+              <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit, massa at.</p>
+            </li>
+          </ul>
+        </section>
+
+        <span class="offer-icon  offer-icon--education"></span>
+        <section class="offer-section  offer-section--education">
+          <h3>Education</h3>
+          <ul>
+            <li>
+              <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit, massa at.</p>
+            </li>
+            <li>
+              <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit, massa at.</p>
+            </li>
+          </ul>
+        </section>
+
+        <span class="offer-icon  offer-icon--entertainment"></span>
+        <section class="offer-section  offer-section--entertainment">
+          <h3>Entertainment</h3>
+          <ul>
+            <li>
+              <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit, massa at.</p>
+            </li>
+            <li>
+              <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit, massa at.</p>
+            </li>
+          </ul>
+        </section>
+
+        <span class="offer-icon  offer-icon--mobility"></span>
+        <section class="offer-section  offer-section--mobility">
+          <h3>Mobility</h3>
+          <ul>
+            <li>
+              <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit, massa at.</p>
+            </li>
+            <li>
+              <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit, massa at.</p>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+
+    <section class="newsletter">
+      <b class="newsletter-slogan">Subscribe to our newsletter</b>
+      <form class="newsletter-form" action="http://echo.htmlacademy.ru" method="post">
+        <input class="newsletter-email" type="email" placeholder="your@email.com">
+        <button class="newsletter-btn btn" type="submit">Subscribe</button>
+      </form>
+    </section>
+
+    <ul class="footer-navigation">
+      <li><b>Ipsum quis</b></li>
+      <li><a href="">Aliquam quis</a></li>
+      <li><a href="">Pulvinar purus</a></li>
+      <li><a href="">Etiam cursus</a></li>
+      <li><a href="">Ipsum quis</a></li>
+      <li><a href="">Enim faucib</a></li>
+    </ul>
+    <ul class="footer-navigation">
+      <li><b>Ipsum quis</b></li>
+      <li><a href="">Aliquam quis</a></li>
+      <li><a href="">Pulvinar purus</a></li>
+      <li><a href="">Etiam cursus</a></li>
+      <li><a href="">Ipsum quis</a></li>
+      <li><a href="">Enim faucib</a></li>
+    </ul>
+    <div class="footer-social">
+      <b>Follow us</b>
+      <ul class="">
+        <li><a href="" class="social-icon">Facebook</a></li>
+        <li><a href="" class="social-icon">Twitter</a></li>
+        <li><a href="" class="social-icon">Google+</a></li>
+        <li><a href="" class="social-icon">YouTube</a></li>
+      </ul>
+    </div>
+    <p class="footer-copyright">Copyright &copy; All Rights Reserved</p>
+  </footer>
 </body>
 
 </html>
