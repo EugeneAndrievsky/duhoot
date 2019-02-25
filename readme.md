@@ -1,2 +1,2 @@
-## Duhoot - поиск услуг для работы и отдыха
+## Duhoot - Travel landing page template
 [index.html](https://eugeneandrievsky.github.io/duhoot/index.html)
